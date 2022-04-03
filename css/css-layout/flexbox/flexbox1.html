@@ -19,7 +19,7 @@
 
       h1 {
         text-align: center;
-        color: white;
+        Acolor: white;
         line-height: 100px;
         margin: 0;
       }
@@ -35,13 +35,30 @@
       section {
         display: flex;
       }
-
       
+      /*article {*/
+      /*  flex: 1;*/
+        /*^each article will have a value of 1= equal amount of the spare space left after styling with css*/
+      /*} */
+      /*article:nth-of-type(3) {*/
+      /*  flex: 2;*/
+        /*^1st 2 flex items have a value of 1 unit each (1/4 + 1/4), 3rd item will have 2 unit (2/4)*/
+      /*}*/
+      
+      article {
+      flex: 1 200px;
+      }
+      
+      article:nth-of-type(3) {
+        flex: 2 200px;
+      }
+      /*^each flex item has 200px of empty space, then the rest of the space left will follow their values*/
+
     </style>
   </head>
   <body>
     <header>
-      <h1>Sample flexbox example</h1>
+      <h1>Flexbox website</h1>
     </header>
 
     <section>
@@ -59,6 +76,14 @@
 
       <article>
         <h2>Third article</h2>
+
+        <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
+
+        <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch paleo 8-bit. Intelligentsia umami wayfarers pickled, asymmetrical kombucha letterpress kitsch leggings cold-pressed squid chartreuse put a bird on it. Listicle pickled man bun cornhole heirloom art party.</p>
+      </article>
+      
+      <article>
+        <h2>Fourth article</h2>
 
         <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
 
